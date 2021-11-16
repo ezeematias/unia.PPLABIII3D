@@ -1,0 +1,226 @@
+header {
+  padding: 20px 20px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.barra {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header nav ul {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+header nav ul li a {
+  color: red;
+  text-decoration: none;
+  text-align: center;  
+  margin-right: 20px;
+  font-size: 20px;
+}
+footer {
+  padding: 20px;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color:black;
+  color: white;
+}
+
+footer nav ul {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: right;
+}
+h1 {
+  background-color: white;
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+
+footer nav ul li a {
+  display: flex;
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 20px;
+}
+#btnGuardar {
+  padding: 10px 10px;
+  background-color: green;
+  color: white;
+  justify-content: center
+  ;
+}
+
+#btnEliminar {  
+  padding: 10px 10px;
+  background-color: red;
+  color: white;
+}
+#btnCancelar {
+  padding: 10px 10px;
+  background-color: red;
+  color: white;
+}
+
+#btnUpdate{
+  padding: 10px 10px;
+  background-color: blue;
+  color: white;
+}
+
+.oculto {
+  display: none;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+fieldset {
+  border-radius: 10px;
+  border: solid 2px gainsboro;
+}
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  border: none;
+  margin: 10px;
+  background-color: gainsboro;
+  border-radius: 10px;
+}
+.transaccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.detalle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#divTabla {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+table {
+  border-collapse:collapse;
+  margin-top: 20%;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+thead {
+  background-color: black;
+  color: white;
+}
+tr:nth-of-type(even) {
+  background-color: lightgrey;
+}
+#spinner-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.portada {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 760px) {
+  .detalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+#myList{
+  padding: 0px;  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: gainsboro;
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.iconify {
+  margin: 15px;  
+  float: left;
+}
+
+
+#divAlert{
+
+  width: 300px;
+  height: 100px;
+
+  display: none;
+  z-index: 100;
+  position: fixed;
+
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  top: 40vh;
+  left: 40vw;
+
+  transition-property: width,height,opacity,display;
+  transition-duration: 2s,2s,2s,3s;
+
+
+  animation-name: alert;
+  animation-duration: 5s;
+
+}
+
+@keyframes alert {
+  from {width: 100px; height: 100px;}
+  to {height: 0px;}
+}
+
+#divAlert:hover {
+width: 100px;
+height: 100px;
+opacity: 0;
+}
+
+@media (max-width:600px){
+  header, footer{
+      flex-direction: row;
+      justify-content: space-around;     
+  }
+
+  .portada{
+      display: none;
+  }
+}
